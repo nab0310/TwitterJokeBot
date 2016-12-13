@@ -14,11 +14,11 @@ var T = new twit(keys);
 //   console.log(data)
 // })
 
-// T.get('users/show', { screen_name: 'NicholasMalone5'}, function(err, data, response) {
-// 	console.log(data);
-// })
+T.get('users/show', { screen_name: 'NickBehrens'}, function(err, data, response) {
+	console.log(data);
+})
 
-var stream = T.stream('statuses/filter', {follow: ['3510233482','738767076']});
+var stream = T.stream('statuses/filter', {follow: ['419216928','3510233482','738767076']});
 
 stream.on('tweet',tweetEvent);
 
