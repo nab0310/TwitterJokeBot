@@ -29,10 +29,8 @@ function tweetEvent(eventMsg){
 	var text = eventMsg.text;
 	var from = eventMsg.user.screen_name;
 
-	if(replyto === null){
-		var newTweet = '@' + from+ ' '+knockknock();
-		tweetIt(newTweet, eventMsg.id_str);
-	}
+	var newTweet = '@' + from+ ' '+knockknock();
+	tweetIt(newTweet, eventMsg.id_str);
 }
 
 function tweetIt(txt, statusID){
