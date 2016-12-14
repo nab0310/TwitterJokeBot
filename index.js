@@ -29,8 +29,10 @@ function tweetEvent(eventMsg){
 	var text = eventMsg.text;
 	var from = eventMsg.user.screen_name;
 
-	var newTweet = '@' + from+ ' '+knockknock();
-	tweetIt(newTweet, eventMsg.id_str);
+	if(replyto !== 'shittyKnockJoke'){
+		var newTweet = '@' + from+ ' '+knockknock();
+		tweetIt(newTweet, eventMsg.id_str);
+	}
 }
 
 function tweetIt(txt, statusID){
