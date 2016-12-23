@@ -34,7 +34,7 @@ function tweetEvent(eventMsg){
 
 	console.log("Got a tweet from "+from+"!");
 
-	if(replyto !== 'shittyKnockJoke'){
+	if(from !== 'shittyKnockJoke'){
 		var newTweet = '@' + from+ ' '+knockknock();
 		tweetIt(newTweet, eventMsg.id_str);
 	}
