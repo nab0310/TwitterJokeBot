@@ -21,6 +21,7 @@ T.get('users/show', { screen_name: 'jackcoleman5'}, function(err, data, response
 	console.log(data);
 })
 
+/* Reply to people every time they tweet */
 var stream = T.stream('statuses/filter', {follow: ['419216928','3510233482','738767076']});
 
 stream.on('tweet',tweetEvent);
@@ -38,6 +39,11 @@ function tweetEvent(eventMsg){
 		tweetIt(newTweet, eventMsg.id_str);
 	}
 }
+/*Tweet by getting images from a site */
+//TODO
+
+/*Tweet using AI to combine things or do some processing before tweeting*/
+//TODO
 
 function tweetIt(txt, statusID){
 	var tweet = {
