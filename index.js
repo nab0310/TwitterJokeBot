@@ -43,7 +43,7 @@ function tweetEvent(eventMsg){
 /*Tweet by getting images from a site */
 //TODO
 
-/*Tweet using AI to combine things or do some processing before tweeting*/
+/*Analize tweets sent to us and reply based on their setiment*/
 //TODO
 var streamUser = T.stream('user');
 
