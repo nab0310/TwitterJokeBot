@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "knock-knock-jokes": "1.7.0",
-    "twit": "2.2.5"
+    "twit": "2.2.5",
+    "monkeylearn": "0.1.10"
   },
   "author": "",
   "license": "ISC"
