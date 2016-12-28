@@ -25,7 +25,7 @@ var T = new twit(keys);
 // 	console.log(data);
 // })
 //
-/* Reply to people every time they tweet bleh */
+/* Reply to people every time they tweet*/
 var stream = T.stream('statuses/filter', {follow: ['419216928','3510233482','738767076']});
 
 stream.on('tweet',tweetEvent);
