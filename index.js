@@ -42,6 +42,12 @@ function tweetEvent(eventMsg){
 }
 /*Tweet by getting images from a site */
 //TODO
+//Tweet every 5 minutes
+setInterval(tweetImage, 300000);
+
+function tweetImage(){
+	console.log("Tweeted");
+}
 
 /*Analize tweets sent to us and reply based on their setiment*/
 //TODO
