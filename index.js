@@ -228,8 +228,6 @@ stream.on('tweet',tweetEvent);
 function tweetEvent(eventMsg){
 	var from = eventMsg.user.screen_name;
 
-	console.log("Got a tweet from "+from+"!");
-
 	if(from !== 'shittyKnockJoke'){
 		var newTweet = '@' + from+ ' '+knockknock();
 		tweetIt(newTweet, eventMsg.id_str);
@@ -280,8 +278,6 @@ function mentionMe(eventMsg){
 	var replyto = eventMsg.in_reply_to_screen_name;
 	var text = [eventMsg.text];
 	var from = eventMsg.user.screen_name;
-
-	console.log("Got a tweet from "+from+"!");
 
 	if(replyto === 'shittyKnockJoke'){
 		console.log("They are talking to me!");
