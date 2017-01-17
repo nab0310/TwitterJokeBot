@@ -1,4 +1,4 @@
-console.log('Its alive');
+console.log('Its alive aayyy');
 
 var tweets ={};
 var numberOfTweets = 0;
@@ -13,7 +13,7 @@ var MonkeyLearn = require('monkeylearn');
 
 var fs = require('fs');
 
-const scribble = require('scribbletune');
+// const scribble = require('scribbletune');
 
 var ml = new MonkeyLearn('0209052bc1311824816e8f4773e40ba740b2cc0d');
 
