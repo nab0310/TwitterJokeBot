@@ -200,8 +200,9 @@ T.post('statuses/update', { status: 'hello world!' }, function(err, data, respon
 })
 */
 
+
 /*Show Data From a User
-T.get('users/show', { screen_name: 'NickBehrens'}, function(err, data, response) {
+// T.get('users/show', { screen_name: 'NickBehrens'}, function(err, data, response) {
 	console.log(data);
 })
 T.get('users/show', { screen_name: 'jackcoleman5'}, function(err, data, response) {
@@ -220,7 +221,7 @@ T.get('users/show', { screen_name: 'jackcoleman5'}, function(err, data, response
 // })
 //
 /* Reply to people every time they tweet*/
-var stream = T.stream('statuses/filter', {follow: ['419216928','3510233482','738767076']});
+var stream = T.stream('statuses/filter', {follow: ['419216928','3510233482','738767076','850021844']});
 
 stream.on('tweet',tweetEvent);
 
