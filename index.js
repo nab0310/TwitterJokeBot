@@ -219,9 +219,9 @@ T.get('users/show', { screen_name: 'jackcoleman5'}, function(err, data, response
 // T.get('users/show', { screen_name: 'jackcoleman5'}, function(err, data, response) {
 // 	console.log(data);
 // })
-//
+// Mandi = 850021844
 /* Reply to people every time they tweet*/
-var stream = T.stream('statuses/filter', {follow: ['419216928','3510233482','738767076','850021844']});
+var stream = T.stream('statuses/filter', {follow: ['419216928','3510233482','738767076']});
 
 stream.on('tweet',tweetEvent);
 
